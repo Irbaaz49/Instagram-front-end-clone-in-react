@@ -1,0 +1,13 @@
+.menu{
+    display: flex;
+    padding-right: 1.5em;
+}
+.menu .icon{
+    margin-right: 2em;
+width: 23px;
+height: 23px;
+
+}
+.menu .icon:hover{
+    cursor: pointer;
+}
