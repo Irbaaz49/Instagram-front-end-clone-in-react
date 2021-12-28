@@ -1,51 +1,75 @@
-.Navigation{
+.Navigation {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: #fff;
+    background-color:#ffffff;
     width: 100%;
-    border-radius: 1px solid #dbdbdb ;
-    
-    }
-    .Navigation .container{
+    border-radius: 1px solid #dbdbdb;
+
+}
+
+.Navigation .container {
     padding: 1em 0 0.9em 0;
     display: flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1000%;
     margin: 0 auto;
+    border-bottom: 0.2px solid #b0b0b0;
+    padding-right: 70px;
+    margin-left: -70px;
+}
+
+.Navigation .container .logo {
+    padding: 0 1em;
+    width: 100px;
+    height: 50%;
+    margin-left: 220px;
+}
+
+.Navigation .container .logo:hover {
+    cursor: pointer;
+}
+
+.Navigation .container .search {
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: rgb(240, 230, 230);
+    min-width: 225px;
+    display: flex;
+    align-items: center;
+    margin-right: -79px;
+    height: 25px;
+    justify-content: flex-start;
+}
+
+.searchIcon {
+    width: 28px;
+    opacity: 0.4;
+    margin-right: 0.3em;
+}
+
+.searchText {
+    color: #8e8e8e;
+    font-weight: 400;
+    font-size: 0.85em;
+}
+
+@media only screen and (max-width:500px) {
+    .Navigation .container .search {
+        display: none!important;
     }
-    .Navigation .container .logo{
-        padding: 0 1em;
-        width: 100px;
-        height: 50%;
+    .Navigation .container {
+     
+        justify-content: space-between;
+       
+        padding-right: 0px;
+        margin-left: 0px;
     }
     
-    .Navigation .container .logo:hover{
-        cursor: pointer;
-    }
-    .Navigation .container .search{
-        border: 1px solid grey;
-        border-radius: 3px ;
-        background-color: rgb(174, 171, 171);
-        min-width: 225px;
-        display: flex;
-        align-items: center;
-        justify-content:flex-start;
-    }
-    .searchIcon{
-        width: 28px;
-        opacity: 0.4;
-        margin-right: 0.3em;
-    }
-    .searchText{
-        color:#8e8e8e ;
-    font-weight: 300;
-        font-size: 0.85em;
-    }
-    
-    @media only screen and (max-width:500px)  {
-        .Navigation .container .search{
-            display: none;
-        }
-    }
+
+.Navigation .container .logo {
+  
+    margin-left: 0px;
+}
+}

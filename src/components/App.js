@@ -1,11 +1,18 @@
-import '../styles/App.css';
-import Navigation from'./Navigation';
+import "../styles/App.css";
+import Navigation from "./Navigation";
+import Cards from "./Cards";
+import Sidebar from "./Sidebar";
 
 function App() {
   return (
     <div className="App">
-      
-    <Navigation/>
+      <Navigation />
+      <main>
+        <div className="container">
+          <Cards />
+          <Sidebar />
+        </div>
+      </main>
     </div>
   );
 }

@@ -6,3 +6,39 @@ background-color: #fff;
     min-width: fit-content;
     font: "Montserrat", sans-serif; 
 }
+.App main{
+    background-color: rgb(201, 199, 199);
+    margin-top: 60px;
+}
+
+.App .container{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 1000px;
+    margin-left: -70px;
+    padding-right: 70px;
+    background-color:#ffffff;
+
+}
+
+a {
+    text-decoration: none;
+    color : #0095f6;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px){
+    main .container{
+        justify-content: center !important;
+    }
+    .App .container{
+       
+        margin-left: 0px;
+        padding-right: 0px;
+        
+    
+    }
+    
+}

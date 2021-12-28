@@ -4,6 +4,7 @@ import { ReactComponent as AddNew } from "../images/addnew.svg";
 import { ReactComponent as Explore } from "../images/explore.svg";
 import { ReactComponent as Heart } from "../images/heart.svg";
 import { ReactComponent as Message } from "../images/message.svg";
+import image from '../images/profileImage.jpg'
 import ProfileIcon from './ProfileIcon.js';
 
 function Menu() {
@@ -15,7 +16,7 @@ function Menu() {
       <Heart className="icon" />
       <AddNew className="icon" />
      
-<ProfileIcon/>
+<ProfileIcon iconSize='small' image={image}/>
 
     </div>
   );

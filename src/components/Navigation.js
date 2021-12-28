@@ -1,7 +1,7 @@
 import '../styles/Navigation.css';
+import Menu from './Menu.js';
 import instaLogo from '../images/instalogo.png';
 import searchIcon from '../images/searchIcon.pmg.png';
-import Menu from './Menu.js';
 
 function Navigation() {
     return  (
